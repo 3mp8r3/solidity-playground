@@ -2,9 +2,6 @@ pragma solidity ^0.4.18;
 
 import "./ERC721.sol";
 
-/**
- * Variation of the Dharma Protocol Non Fungible ERC721 token
- */
 contract StandardNonFungibleToken is ERC721 {
 
     uint public totalSupply;
@@ -66,7 +63,6 @@ contract StandardNonFungibleToken is ERC721 {
         ownerToTokensOwned[_owner];
     }
 
-    // Maybe unnecessary
     function implementsERC721() public view returns (bool) {
         return true;
     }
